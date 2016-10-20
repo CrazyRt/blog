@@ -1,60 +1,50 @@
-# stepbystep  
-A jekyll theme, simple and clear, compatible with PC iPad and Phone (RWD)
+# Ink
 
-## Preview
-#### PC or Pad
-<img style="box-shadow: 10px 10px 5px #888888;border: 1px solid black;" src="https://github.com/jokinkuang/stepbystep/raw/master/article.png"></img>
-#### Mobile
-<div style="box-shadow: 10px 10px 5px #888888;border: 1px solid black;">
-<img style="width:50%;" src="https://github.com/jokinkuang/stepbystep/raw/master/mobile.png"></img>
-<img style="width:50%;" src="https://github.com/jokinkuang/stepbystep/raw/master/mobile2.png"></img>
-</div>
+Ink is a minmal two-column theme for [Jekyll](http://jekyllrb.com) 
 
-## Feature  
+![Screenshot](https://s32.postimg.org/gdtp6pw1x/ink.png)
 
-1. Compatible with PC iPad and Phone (RWD)
-2. Support blogger mood-talk(说说)
-3. Support post subdirs as post categories  
-  `_post/linux/nodejs/2016-9-1-About-Nodejs.md => linux and nodejs would merge into the post categories`
+# Installation 
 
-## Install
-assume the github username is "hello" then:  
+##### Setup on your local machine
+ * Clone or download the repository
+ * You should have [ruby](https://www.ruby-lang.org/en/) installed in your system
+ * Install bundler which helps in specifying and installing dependencies of any Ruby project ```gem install bundler```
+ * Go to the root of the repo and run this - ```bundle install```
+ * Then - ```bundle exec jekyll serve```
 
-1. create a repository named "hello.github.io"  
-2. clone this repository  
-  `git clone https://github.com/jokinkuang/stepbystep.git`  
-3. push the whole thing to your repo "hello.github.io"  
-  `git remote set-url origin https://github.com/hello/hello.github.io.git`  
-  `git push origin master`  
-4. browse "hello.github.io"  
+##### Make it your own
+ * Fork the repository
+ * Follow the configuration step
+ * Host your site/blog with **Ink**
 
-> if your github username is "world" then replace upper "hello" all to "world"  
+# Configuration 
+ * Change the following in ```_config.yml```
+ ```
+    name:               "Ink"
+    description:        "A minimalistic jekyll theme for humans"
+    url:                ""
+    author:             "thinker3197"
+    email:              "jhondoe@abc.com"
+    gravatar_hash:      "205e460b479e2e5b48aec07710c08d50"
+    twitter:            "jhondoe"
+    email:              "jhondoe@abc.com"
+    github:             "jhondoe"
+    pinterest:          "jhondoe"
+    linkedin:           "jhondoe"
+    facebook:           "jhondoe"
+    
+ ```
+ * Set the number of posts that appear in each page by changing the ```paginate``` option in ```_config.yml``` file. Default value is 5.
+ * Add more navigation menus in the ```nav``` section in ```_config.yml```. 
+ * Add your custom url in ```url``` option. Example : http://thinker3197.github.io/blog. Consult the ```gh-pages``` branch to see the basic setup for a blog.
+ * Add your custom background by adding a custom background link in the ```background``` option in ```_config.yml```.
+ 
+# Licensce
 
-## Custom Domain  
-if you want to visit "www.hello.com" instead of "hello.github.io" then:  
+Open sourced under [MIT LICENSE](https://github.com/thinker3197/ink/blob/master/LICENSE) 
 
-1. create a file named "CNAME" (the file is already exist)  
-2. buy the "www.hello.com" domain  
-3. add following to the "CNAME"  
-  `www.hello.com`  
-4. go to the Shop where your domain bought and set the Domain DNS to:  
-  | prefix | record-type |      host       |  
-  |   www  |   CNAME     | hello.github.io |  
-5. wait a long long time  
-6. browse "www.hello.com"
 
-## Custom Your Site  
-1. you need a [duoshuo](www.duoshuo.com) account  
-2. you need a [google-analytics](https://www.google.com/analytics/) account  
-3. all settings are in `_config.yml` 
 
-## Other  
-whoever use this theme please add your site to the [wiki](https://github.com/jokinkuang/stepbystep/wiki)  
 
-## How It works  
-[English](http://www.jokinkuang.info/2016/09/03/stey-by-step-to-create-a-jekyll-theme.html)  
-[ 中文 ](http://www.jokinkuang.info/2016/09/03/how-to-create-the-jekyll-theme.html)
-
-## License  
-Under The [MIT](https://tldrlegal.com/license/mit-license) License
 
